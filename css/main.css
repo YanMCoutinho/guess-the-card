@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.red {
+    color: red;
+}
+
+
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.score {
+    margin-bottom: 10px;
+}
+
+.mid div {
+    background-color: white;
+    color: black;
+}
+
+.mid div.bg-red {
+    background-color: red;
+    color: white;
+}
+
+.mid div.bg-blue {
+    background-color: #2B7AB0;
+    color: white;
+}
+
+div#result {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+
+.board,
+.choice-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.board {
+    color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 30px 0;
+    flex-direction: column;
+    background: rgb(28,232,0);
+    background: radial-gradient(circle, rgba(28,232,0,1) 0%, rgba(19,153,0,1) 55%, rgba(24,195,0,1) 100%);
+}
+
+.board .mid img {
+    width: 275px;
+}
+
+.choice-inputs,
+.player button {
+    min-width: 275px;
+}
+
+.choice-inputs select {
+    width: 48%;
+}
+
+.choice-inputs select option {
+    color: black;
+}
+
+.choice-inputs select,  
+.choice-inputs select option {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.choice-inputs select#card-suit {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.choice-inputs select#card-suit option:nth-child(1),
+.choice-inputs select#card-suit option:nth-child(3) {
+    color: red;
+}
+
+.player button {
+    margin-top: 20px;
+    height: 25px;
+    line-height: 25px;
+    border: 0;
+    border-radius: 3px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.8s;
+    background-color: rgb(255, 181, 44);
+    cursor: pointer;
+}
+
+.player button:hover {
+    background-color: rgb(218, 142, 0);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Adivinhe a Carta</title>
+    </head>
+    <body>
+        <div class="board">
+            <div class="top">
+                <div class="score">
+                    <p id="points">Pontos: <b>0</b></p>
+                </div>
+            </div>
+            <div class="mid">
+                <img id="card-img" src="./img/card-bottom.jpg" alt="Deck de cartas">
+                <div id="result">
+                    <p>Tente Adivinhar</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <form class="player">
+                    <div class="choice-inputs">
+                        <select required name="card-value" id="card-value">
+                            <option value="A">A</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="0">10</option>
+                            <option value="J">J</option>
+                            <option value="Q">Q</option>
+                            <option value="K">K</option>
+                        </select>
+                        <select required name="card-suit" id="card-suit">
+                            <option value="diamonds">♦️</option>
+                            <option value="spades">♠️</option>
+                            <option value="hearts">♥️</option>
+                            <option value="clubs" selected>♣️</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="confirm-button">adivinhar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./js/main.js"></script>
+</html>
